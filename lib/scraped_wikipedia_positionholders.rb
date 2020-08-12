@@ -27,6 +27,8 @@ module Scraped
       end
 
       def fields
+        raise "No results" if rows.empty?
+
         rows[1].keys
       end
     end

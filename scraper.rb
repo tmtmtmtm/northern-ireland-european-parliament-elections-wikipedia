@@ -18,27 +18,27 @@ class Candidates < WikipediaCandidatesPage
   decorator WikidataIdsDecorator::Links
 
   def wanted_tables
-    noko.xpath('//table[caption[a]]')
+    noko.xpath('.//table[.//th[contains(., "Candidate")]]')
   end
 end
 
 # Each candidate in each election
 class Candidate < WikipediaCandidateRow
   def columns
-    %w[_color party name votes _percentage _diff]
+    %w[_color party name]
   end
 
   field :election do
-    noko.xpath('ancestor::table//caption//a/@wikidata').map(&:text).first
+    noko.xpath('ancestor::table//tr[1]//a/@wikidata').map(&:text).first
   end
 
   field :electionLabel do
-    noko.xpath('ancestor::table//caption//a').map(&:text).map(&:tidy).first
+    noko.xpath('ancestor::table//tr[1]//a').map(&:text).map(&:tidy).first
   end
 
   # https://stackoverflow.com/a/6630486
   field :ranking do
-    (tds[0].xpath('count(ancestor::tr) + count(ancestor::tr[1]/preceding-sibling::tr)') - 1).to_i
+    (tds[0].xpath('count(ancestor::tr) + count(ancestor::tr[1]/preceding-sibling::tr)') - 2).to_i
   end
 end
 
