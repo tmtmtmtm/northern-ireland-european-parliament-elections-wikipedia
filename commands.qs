@@ -34,12 +34,7 @@ LAST	Den	"Northern Irish election candidate"
 LAST	P106	Q19772737
 LAST	P3602	Q1451109	P768	Q7058448	P102	Q7886826	P1352	10	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
 Q5479812	P3602	Q2052503	P768	Q7058448	P102	Q76382	P1352	7	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
-CREATE
-LAST	P31	Q5
-LAST	Len	"Francis Donnelly"
-LAST	Den	"Northern Irish election candidate"
-LAST	P106	Q19772737
-LAST	P3602	Q1451109	P768	Q7058448	P102	Q1860218	P1352	12	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
+Q98266348	P3602	Q1451109	P768	Q7058448	P102	Q1860218	P1352	12	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
 Q11682348	P3602	Q1451109	P768	Q7058448	P102	Q841045	P1352	4	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
 Q20049328	P3602	Q5412950	P768	Q7058448	P102	Q10647	P1352	7	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
 Q5932534	P3602	Q2052503	P768	Q7058448	P102	Q7879973	P1352	8	S4656	"https://en.wikipedia.org/wiki/Northern_Ireland_(European_Parliament_constituency)"
